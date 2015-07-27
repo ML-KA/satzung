@@ -1,0 +1,2 @@
+# satzung
+Satzung der Hochschulgruppe
