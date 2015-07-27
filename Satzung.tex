@@ -1,197 +1,49 @@
-\documentclass[a4paper]{scrartcl}
-\usepackage[utf8]{inputenc} % this is needed for umlauts
-\usepackage[ngerman]{babel} % this is needed for umlauts
-\usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
-\usepackage{hyperref}   % links im text
-\usepackage{csquotes}
-\usepackage{titlesec}
+\documentclass[a4paper, 11pt, parskip=no, headings=small]{scrartcl}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 
-\titleformat{\section}
-  {\normalfont\Large\bfseries}{\S\thesection}{1em}{}
+\usepackage[ngerman]{babel}
+\usepackage{tabularx, multirow, float}
 
-\newcommand\Gruendungsdatum{10.~Oktober~2015}
-\newcommand\GruppenName{ML-KIT}
-
-\hypersetup {
-  pdfauthor   = {Martin Thoma},
-  pdfkeywords = {Satzung der \GruppenName{} Hochschulgruppe},
-  pdftitle    = {Satzung der \GruppenName{} Hochschulgruppe}
-}
-
-
+%\usepackage{amsmath,amssymb,amsthm,amsfonts,amsbsy,latexsym}
+%opening
+\title{Satzung der Hochschulgruppe \\ \qq{Forum Maschinelles Lernen Karlsruhe}}
+\author{}
+\date{\today}
+\newcommand{\qq}[1]{\glqq{}#1\grqq{}}
+\renewcommand{\thesection}{\S\arabic{section}}
 \begin{document}
- \author{Martin Thoma}
- \title{Satzung der \GruppenName{} Hochschulgruppe}
- \date{27. Juli 2015}
+	
+\maketitle
 
- \maketitle
+\section{Name}
+Der Name der Hochschulgruppe lautet \qq{Forum Maschinelles Lernen Karlsruhe}. Sie hat ihren Sitz am Karlsruher Institut für Technologie (KIT).
 
-\section{Name, Sitz des Vereins}
-\begin{enumerate}
-    \item Die Hochschulgruppe führt den Namen \enquote{\GruppenName{}} und der Sitz ist
-          Karlsruhe, Deutschland.
-\end{enumerate}
+\section{Zweck}
+Zweck der Hochschulgruppe ist es, eine Austauschplattform über Themen und Projekte im Bereich des Maschinellen Lernens zu bieten und wissenschaftliche Diskussion und Weiterbildung in diesem Bereich zu fördern. Zur Verwirklichung dieser Ziele organisiert die Mitglieder der Hochschulgruppe regelmäßig Vortragsreihen, Lesekreise sowie praktische Projekte. 
 
-\section{Zweck des Vereins}
-\begin{enumerate}
-    \item Der Zweck des Vereins ist die Förderung und Verbreitung von Wissen
-          im Bereich des maschinellen Lernens.
-    \item Der Satzungszweck wird insbesondere verwirklicht durch regelmäßige
-          Zusammenkunft der aktiven Mitglieder sowie der Organisation und
-          Ausführung von Veranstaltungen rund um das maschinelle Lernen.
-\end{enumerate}
+\section{Veranstaltungen und Projekte}
 
-
-\section{Selbstlosigkeit}
-\begin{enumerate}
-    \item Die Hochschulgruppe ist selbstlos tätig und verfolgt nicht in erster
-          Linie eigenwirtschaftliche Zwecke.
-    \item Mittel des Vereins dürfen nur für die satzungsmäßigen Zwecke
-          verwendet werden. Die Mitglieder erhalten keine Zuwendungen aus den
-          Mitteln des Vereins. Es darf keine Person durch Ausgaben, die dem
-          Zweck des Vereins fremd sind, oder durch unverhältnismäßig hohe
-          Vergütungen begünstigt werden.
-\end{enumerate}
-
+Jedes Mitglied kann Veranstaltungen und Projekte mit Bezug zu Maschinellem Lernen organisieren und über die von der Hochschulgruppe bereitgestellten Kommunikationswege bewerben. Die Teilnahme an allen Veranstaltungen ist freiwillig. Abwesenheit ist kein Ausschlusskriterium aus der Hochschulgruppe. Einzelne Projekte können eine Regelmäßige Anwesenheit bei Besprechungen und aktive Beteiligung der Projektteilnehmer erfordern. Dies ist bei der Ankündigung der Ankündigung und Vorbesprechung des Projektes zu erwähnen. Ein Ausschluss von Mitgliedern aus einzelnen Projekten ist möglich.
 
 \section{Mitgliedschaft}
-\begin{enumerate}
-    \item Mitglieder des Vereins können natürliche Personen werden, welche die
-          Ziele des Vereins unterstützen.
-    \item Die Mitgliedschaft endet, abgesehen von Tod oder Auflösung, durch:
-    \begin{enumerate}
-        \item Austrittserklärung in Textform seitens des Mitglieds.
-        \item Streichung aus der Mitgliederliste. Die Streichung eines
-              Mitglieds aus der Mitgliederliste erfolgt durch den Vorstand,
-              wenn das Mitglied mit der Zahlung des Mitgliedsbeitrags mehr als
-              einen Monat im Verzug ist und diesen trotz zweimaliger Mahnung,
-              die in Textform zu erfolgen hat, nicht gezahlt hat. Sollten dem
-              Vorstand keine aktuellen Kontaktdaten vorliegen kann die
-              Streichung auch ohne Mahnung erfolgen.
-        \item Ausschluss. Ein Mitglied wird aus dem Verein ausgeschlossen, wenn
-              es in erheblichem Maße die Ziele des Vereins verletzt. Über den
-              Ausschluss entscheidet der Vorstand. Gegen einen Ausschluss kann
-              Widerspruch in Textform eingelegt werden. Über diesen Widerspruch
-              entscheidet die nächste Mitgliederversammlung.
-    \end{enumerate}
-\end{enumerate}
-
-
-\section{Beiträge}
-\begin{enumerate}
-    \item Von den Mitgliedern können Beiträge erhoben werden. Die Höhe der
-          Beiträge und deren Fälligkeit bestimmt die Mitgliederversammlung.
-\end{enumerate}
-
-
-\section{Organe des Vereins}
-\begin{enumerate}
-    \item Die Organe des Vereins sind der Vorstand, die Vereinssitzung, die
-          Kassenprüfer und die Mitgliederversammlung.
-\end{enumerate}
-
-
+Mitglied der Hochschulgruppe kann jeder interessierte Student werden, der am Karlsruher Institut für Technologie (KIT), der Karlsruher Hochschule für Musik, der Karlsruher Hochschule für Gestaltung, der Pädagogischen Hochschule Karlsruhe (PH), der Karlshochschule, der Hochschule Karlsruhe – Technik und Wirtschaft (HSKa) oder der Dualen Hochschule Baden-Württemberg Karlsruhe (DHBW Karlsruhe) immatrikuliert ist. Alle Mitglieder arbeiten ehrenamtlich.
+\section{Austritt}
+Der Austritt aus der Hochschulgruppe ist jederzeit zulässig. Es reicht eine formlose
+Mitteilung gegenüber dem Vorstand. Ein Mitglied kann aus der Hochschulgruppe
+ausgeschlossen werden, wenn sein Verhalten in grober Weise gegen die Interessen
+der Hochschulgruppe verstößt.
+\section{Beitrag}
+Es wird kein Jahresbeitrag erhoben.
 \section{Vorstand}
-\begin{enumerate}
-    \item Der Vorstand setzt sich zusammen aus den nach Aufgabenbereichen
-          getrennten Positionen:
-          \begin{itemize}
-              \item Vorsitz
-              \item Finanzen
-              \item Marketing
-              \item Events
-          \end{itemize}
-          Die Vereinigung von zwei Positionen in einer Person ist unzulässig.
-          Jedes Vorstandsmitglied ist einzeln zur Vertretung des Vereins
-          berechtigt.
-    \item Der Vorstand wird durch die Mitgliederversammlung für die Dauer von
-          6~Monaten gewählt.
-    \item Eine Wiederwahl ist zulässig.
-    \item Jedes Mitglied des Vorstandes kann allein über Beträge bis zu einer
-          Höhe von B1 pro Monat frei verfügen. Der Vorstand kann mit einer 3/4
-          Mehrheit über einen Betrag bis zu einer Höhe von B2 pro Monat frei
-          verfügen. Die Beträge B1 und B2 werden von der Mitgliederversammlung
-          festgelegt.
-\end{enumerate}
-
-
-\section{Vereinssitzung}
-\begin{enumerate}
-    \item Die Vereinssitzung wird vom Vorstand einberufen, setzt sich aus den
-          ordentlichen Mitgliedern des Vereins zusammen und tagt regelmäßig,
-          mindestens jedoch einmal pro Monat. Sie diskutiert und koordiniert
-          die Aktivitäten des Vereins.
-    \item Die Vereinssitzung entscheidet über die Verfügung des Vorstands von
-          Beträgen, die über die Beträge B1 und B2 hinausgehen.
-    \item Entscheidungen werden mit einfacher Mehrheit der Anwesenden getroffen
-          und finden nach demokratischen Grundsätzen statt.
-\end{enumerate}
-
-
-\section{Kassenprüfer}
-\begin{enumerate}
-    \item Um die sachgerechte und wirtschaftliche Verwendung der Mittel des
-          Vereins zu überprüfen, bestellt die Mitgliederversammlung für ein
-          Semester zwei Kassenprüfer. Diese prüfen auch den Semesterabschluss.
-    \item Zur Wahrnehmung ihrer Aufgaben können sie vom Vorstand alle
-          erforderlichen Auskünfte mündlich und/oder schriftlich und die
-          Einsicht in alle Unterlagen verlangen. Sie erstatten jeder
-          ordentlichen Mitgliederversammlung einen Bericht.
-    \item Zur Wahrung der Objektivität dürfen Vorstandsmitglieder nicht als
-          Kassenprüfer gewählt werden.
-\end{enumerate}
-
-
-\section{Mitgliederversammlung}
-\begin{enumerate}
-    \item Die Mitgliederversammlung wird vom Vorstand geleitet und findet
-          einmal pro Semester statt.Jedes Mitglied kann und soll an der
-          Mitgliederversammlung teilhaben und dieVersammlung durch eigene Beiträge an
-          der Tagesordnung ergänzen.
-    \item Zur Mitgliederversammlung wird von einem Vorstandsmitglied unter
-          Angabe derTagesordnung mindestens zwei Wochen vorher eingeladen.
-          Eingeladen wird per E-Mail, aufschriftlichen Antrag auch auf dem
-          Postweg. Satzungsänderungen sind mit der Tagesordnunganzukündigen.
-    \item Die Mitgliederversammlung ist beschlussfähig, wenn sie ordnungsgemäß
-          einberufen wurde.
-    \item Mitglieder haben die Möglichkeit ihre Stimme (Zustimmung oder
-          Ablehnung) zu Beschlüssen 3~Tage vorher in Textform an den Vorstand
-          abzugeben. Nur für diese Beschlüsse zählt das Mitglied als anwesend.
-    \item Beschlüsse werden mit der einfachen Mehrheit der anwesenden Mitglieder gefasst.
-          Satzungsänderungen, eine Änderung des Vereinszwecks sowie eine
-          Auflösung des Vereins bedürfen einer 2/3 Mehrheit der anwesenden
-          Mitglieder. Mitglieder, die sich der Stimme enthalten, werden
-          behandelt wie nicht erschienene.
-    \item Aufgaben der Mitgliederversammlung:
-        \begin{enumerate}
-            \item Wahl, Abberufung und Entlastung des Vorstands
-            \item Wahl der Kassenprüfer
-            \item Entgegennahme des Semesterberichts des Vorstands
-            \item Satzungsänderungen, Änderungen des Vereinszwecks und
-                  Auflösung des Vereins
-            \item Festlegen der Beträge B1, B2
-        \end{enumerate}
-    \item Der Vorstand hat eine außerordentliche Mitgliederversammlung
-          einzuberufen, wenn dies im Interesse des Vereins erforderlich ist
-          oder die Einberufung durch 1/10 der Mitglieder schriftlich unter
-          Angabe von Gründen verlangt wird.
-\end{enumerate}
-
-\section{Protokolle}
-\begin{enumerate}
-    \item Die während der Vereinssitzung und der Mitgliederversammlung
-          gefassten Beschlüsse sind schriftlich niederzulegen und den
-          Vereinsmitgliedern zugänglich zu machen.
-\end{enumerate}
-
-
-\section{Inkrafttreten}
-\begin{enumerate}
-    \item Die Satzung ist auf der Gründungsversammlung am \Gruendungsdatum{} in
-          Karlsruhe beschlossen worden. Sie tritt mit diesem Tage in Kraft.
-\end{enumerate}
-
-
-Karlsruhe, den \Gruendungsdatum{}
+Der Vorstand der Hochschulgruppe wird auf der Hauptversammlung gewählt. Der Vorstand ist für die Repräsentation der Hochschulgruppe nach außen sowie für die
+internen Belange der Hochschulgruppe verantwortlich. Die Mitglieder der
+Hochschulgruppe wählen zudem einen Kassenwart. Der Vorstand verwalten auch die Mitgliederliste der Hochschulgruppe und sind für die Protokollierung und den Schriftverkehr innerhalb der Hochschulgruppe zuständig. Der Vorstand wird für ein Jahr gewählt.
+\section{Hauptversammlung}
+Die Mitglieder der Hochschulgruppe treffen sich einmal jährlich zur Hauptversammlung. Auf dieser wird der Vorstand entlastet und ein neuer Vorstand gewählt. Zudem können Sitzungsänderungen mit einer 2/3 Mehrheit beschlossen werden.
+\section{Einberufung Hauptversammlung}
+Die Mitgliederversammlung wird per E-Mail durch den Vorstand unter Einhaltung
+einer Einladungsfrist von mindestens zwei Wochen einberufen. Dabei ist die Tages-
+Ordnung mitzuteilen.
 
 \end{document}
