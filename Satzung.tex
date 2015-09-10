@@ -1,49 +1,120 @@
-\documentclass[a4paper, 11pt, parskip=no, headings=small]{scrartcl}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\documentclass[a4paper]{scrartcl}
+\usepackage[utf8]{inputenc} % this is needed for umlauts
+\usepackage[ngerman]{babel} % this is needed for umlauts
+\usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage{hyperref}   % links im text
+\usepackage{csquotes}
+\usepackage{titlesec}
 
-\usepackage[ngerman]{babel}
-\usepackage{tabularx, multirow, float}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\S\thesection}{1em}{}
 
-%\usepackage{amsmath,amssymb,amsthm,amsfonts,amsbsy,latexsym}
-%opening
-\title{Satzung der Hochschulgruppe \\ \qq{Forum Maschinelles Lernen Karlsruhe}}
-\author{}
-\date{\today}
-\newcommand{\qq}[1]{\glqq{}#1\grqq{}}
-\renewcommand{\thesection}{\S\arabic{section}}
+\newcommand\Gruendungsdatum{10.~Oktober~2015}
+\newcommand\GruppenName{ML-KIT}
+
+\hypersetup {
+  pdfauthor   = {Johannes Reiß, Marvin Schweizer, Matthias Stu, Marvin Teichmann, Martin Thoma},
+  pdfkeywords = {Satzung der \GruppenName{} Hochschulgruppe},
+  pdftitle    = {Satzung der \GruppenName{} Hochschulgruppe}
+}
+
+
 \begin{document}
-	
+ \author{}
+\title{Satzung der Hochschulgruppe \\ \enquote{\GruppenName{}}}
+\date{\today}
 \maketitle
 
 \section{Name}
-Der Name der Hochschulgruppe lautet \qq{Forum Maschinelles Lernen Karlsruhe}. Sie hat ihren Sitz am Karlsruher Institut für Technologie (KIT).
+Der Name der Hochschulgruppe lautet \enquote{\GruppenName{}}. Sie hat ihren
+Sitz am Karlsruher Institut für Technologie (KIT).
 
-\section{Zweck}
-Zweck der Hochschulgruppe ist es, eine Austauschplattform über Themen und Projekte im Bereich des Maschinellen Lernens zu bieten und wissenschaftliche Diskussion und Weiterbildung in diesem Bereich zu fördern. Zur Verwirklichung dieser Ziele organisiert die Mitglieder der Hochschulgruppe regelmäßig Vortragsreihen, Lesekreise sowie praktische Projekte. 
-
-\section{Veranstaltungen und Projekte}
-
-Jedes Mitglied kann Veranstaltungen und Projekte mit Bezug zu Maschinellem Lernen organisieren und über die von der Hochschulgruppe bereitgestellten Kommunikationswege bewerben. Die Teilnahme an allen Veranstaltungen ist freiwillig. Abwesenheit ist kein Ausschlusskriterium aus der Hochschulgruppe. Einzelne Projekte können eine Regelmäßige Anwesenheit bei Besprechungen und aktive Beteiligung der Projektteilnehmer erfordern. Dies ist bei der Ankündigung der Ankündigung und Vorbesprechung des Projektes zu erwähnen. Ein Ausschluss von Mitgliedern aus einzelnen Projekten ist möglich.
+\section{Zweck des Vereins}
+\begin{enumerate}
+    \item Der Zweck des Vereins ist die Förderung und Verbreitung von Wissen
+          im Bereich des maschinellen Lernens.
+    \item Der Satzungszweck wird insbesondere durch regelmäßige
+          Zusammenkunft der aktiven Mitglieder sowie der Organisation und
+          Ausführung von Veranstaltungen rund um das maschinelle Lernen
+          verwirklicht.
+\end{enumerate}
 
 \section{Mitgliedschaft}
-Mitglied der Hochschulgruppe kann jeder interessierte Student werden, der am Karlsruher Institut für Technologie (KIT), der Karlsruher Hochschule für Musik, der Karlsruher Hochschule für Gestaltung, der Pädagogischen Hochschule Karlsruhe (PH), der Karlshochschule, der Hochschule Karlsruhe – Technik und Wirtschaft (HSKa) oder der Dualen Hochschule Baden-Württemberg Karlsruhe (DHBW Karlsruhe) immatrikuliert ist. Alle Mitglieder arbeiten ehrenamtlich.
-\section{Austritt}
-Der Austritt aus der Hochschulgruppe ist jederzeit zulässig. Es reicht eine formlose
-Mitteilung gegenüber dem Vorstand. Ein Mitglied kann aus der Hochschulgruppe
-ausgeschlossen werden, wenn sein Verhalten in grober Weise gegen die Interessen
-der Hochschulgruppe verstößt.
-\section{Beitrag}
-Es wird kein Jahresbeitrag erhoben.
-\section{Vorstand}
-Der Vorstand der Hochschulgruppe wird auf der Hauptversammlung gewählt. Der Vorstand ist für die Repräsentation der Hochschulgruppe nach außen sowie für die
-internen Belange der Hochschulgruppe verantwortlich. Die Mitglieder der
-Hochschulgruppe wählen zudem einen Kassenwart. Der Vorstand verwalten auch die Mitgliederliste der Hochschulgruppe und sind für die Protokollierung und den Schriftverkehr innerhalb der Hochschulgruppe zuständig. Der Vorstand wird für ein Jahr gewählt.
-\section{Hauptversammlung}
-Die Mitglieder der Hochschulgruppe treffen sich einmal jährlich zur Hauptversammlung. Auf dieser wird der Vorstand entlastet und ein neuer Vorstand gewählt. Zudem können Sitzungsänderungen mit einer 2/3 Mehrheit beschlossen werden.
-\section{Einberufung Hauptversammlung}
-Die Mitgliederversammlung wird per E-Mail durch den Vorstand unter Einhaltung
-einer Einladungsfrist von mindestens zwei Wochen einberufen. Dabei ist die Tages-
-Ordnung mitzuteilen.
+\begin{enumerate}
+    \item Mitglied der Hochschulgruppe kann jeder am maschinellen Lernen
+          Interessierte werden, insbesondere Studenten des Karlsruher
+          Institutes für Technologie (KIT).
+    \item Der Austritt aus der Hochschulgruppe ist jederzeit zulässig. Es
+          genügt eine formlose schriftliche Mitteilung gegenüber dem Vorstand.
+    \item Ein Mitglied kann aus der Hochschulgruppe ausgeschlossen werden, wenn
+          sein Verhalten in grober Weise gegen die Interessen der
+          Hochschulgruppe verstößt. Über den Ausschluss entscheidet der
+          Vorstand. Gegen einen Ausschluss kann Widerspruch in Textform
+          eingelegt werden. Über diesen Widerspruch entscheidet die nächste
+          Mitgliederversammlung.
+\end{enumerate}
 
+\section{Beiträge}
+Von den Mitgliedern können Beiträge erhoben werden. Die Höhe der Beiträge und
+deren Fälligkeit bestimmt die Mitgliederversammlung.
+
+\section{Vorstand}
+Der Vorstand der Hochschulgruppe wird auf der Mitgliederversammlung gewählt.
+Der Vorstand ist für die Repräsentation der Hochschulgruppe nach außen sowie
+für die internen Belange der Hochschulgruppe verantwortlich. Der Vorstand
+verwaltet auch die Mitgliederliste der Hochschulgruppe und ist für die
+Protokollierung und den Schriftverkehr innerhalb der Hochschulgruppe zuständig.
+Der Vorstand wird für ein Jahr gewählt. Der Vorstand besteht aus einem
+Vorsitzendem, einem Stellvertreter und einem Kassenwart.
+
+\section{Mitgliederversammlung}
+\begin{enumerate}
+    \item Die Mitglieder der Hochschulgruppe treffen sich zweimal jährlich zur
+          Mitgliederversammlung. Auf der ersten Mitgliederversammlung im
+          Wintersemester wird der Vorstand entlastet und ein neuer Vorstand
+          gewählt. Zudem können auf allen Mitgliederversammlungen
+          Satzungsänderungen mit einer 2/3 Mehrheit beschlossen werden.
+    \item Die Mitgliederversammlung wird per E-Mail durch den Vorstand unter
+          Einhaltung einer Einladungsfrist von mindestens zwei Wochen
+          einberufen. Dabei ist die Tagesordnung mitzuteilen.
+\end{enumerate}
+
+\section{Vereinssitzung}
+Die Vereinssitzung wird vom Vorstand einberufen, setzt sich aus den
+ordentlichen Mitgliedern des Vereins zusammen und tagt regelmäßig. Sie
+diskutiert und koordiniert die Aktivitäten des Vereins.
+
+\section{Abstimmungen}
+\begin{enumerate}
+    \item Personenwahlen sind grundsätzlich geheim durchzuführen.
+    \item Alle anderen Wahlen sind grundsätzlich öffentlich durchzuführen,
+          können auf Antrag jedoch auch in geheimer Wahl durchgeführt werden.
+    \item Entscheidungen werden grundsätzlich mit absoluter Mehrheit der
+          anwesenden Mitglieder getroffen. Kommt keine absolute Mehrheit
+          zustande ist eine Stichwahl durchzuführen.
+\end{enumerate}
+
+\section{Kassenprüfer}
+\begin{enumerate}
+    \item Um die sachgerechte und wirtschaftliche Verwendung der Mittel des
+          Vereins zu überprüfen, bestellt eine Mitgliederversammlung zwei
+          Kassenprüfer. Diese prüfen auch den Jahresabschluss.
+    \item Zur Wahrnehmung ihrer Aufgaben können sie vom Vorstand alle
+          erforderlichen Auskünfte mündlich und/oder schriftlich und die
+          Einsicht in alle Unterlagen verlangen. Sie erstatten jeder
+          ordentlichen Mitgliederversammlung einen Bericht.
+    \item Zur Wahrung der Objektivität dürfen Vorstandsmitglieder nicht als
+          Kassenprüfer gewählt werden.
+\end{enumerate}
+
+\section{Protokolle}
+Die während der Vereinssitzung und der Mitgliederversammlung gefassten
+Beschlüsse sind schriftlich niederzulegen und den Vereinsmitgliedern
+zugänglich zu machen.
+
+\section{Inkrafttreten}
+Die Satzung ist auf der Gründungsversammlung am \Gruendungsdatum{} in Karlsruhe
+beschlossen worden. Sie tritt mit diesem Tage in Kraft.
+
+% Karlsruhe, den \Gruendungsdatum{}
 \end{document}
