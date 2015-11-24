@@ -2,6 +2,7 @@ SOURCE = Satzung
 
 make:
 	pdflatex $(SOURCE).tex -output-format=pdf
+	pdflatex $(SOURCE).tex -output-format=pdf
 	make clean
 
 clean:

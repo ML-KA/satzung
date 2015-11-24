@@ -19,12 +19,23 @@
   pdftitle    = {Satzung der \GruppenName{} Hochschulgruppe}
 }
 
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\fancyhf{}
+\cfoot{\thepage\ von \pageref{LastPage}}
+\pagestyle{fancy}
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
+\renewcommand{\headrulewidth}{0 mm}
+
 \usepackage{microtype}
 \begin{document}
  \author{}
 \title{Satzung der Hochschulgruppe \\ \enquote{\GruppenName{}}}
 \date{\today}
 \maketitle
+
 
 \section{Name}
 Der Name der Hochschulgruppe lautet \enquote{\GruppenName{}}. Sie hat ihren
